@@ -152,13 +152,7 @@ public class AllEmployeeProblem {
         // .ifPresent(dept->System.out.println(dept));
 
         // Problem 13: Count employees in each department
-        System.out.println("\n13. Employee Count by Department:");
-        Map<String,Long> countEmpEachDept=empList.stream()
-        .collect(Collectors.groupingBy(Employee::getDepartment,
-         Collectors.counting()
-
-        ));
-        countEmpEachDept.forEach((dept,count)->System.out.println(dept+"  "+count+" Employees"));
+     
 
     }
     
